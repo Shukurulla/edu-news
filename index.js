@@ -16,7 +16,7 @@ app.use(Category);
 
 app.use(
   cors({
-    origin: "*",
+    origin: "https://edu-news-server.onrender.com",
     optionsSuccessStatus: 200,
     credentials: true,
   })
