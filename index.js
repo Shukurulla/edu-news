@@ -14,13 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(NewsRouter);
 app.use(Category);
 
-app.use(
-  cors({
-    origin: "*",
-    optionsSuccessStatus: 200,
-    credentials: true,
-  })
-);
+app.use(cors());
 
 mongoose
   .connect(process.env.MONGO_URI)
